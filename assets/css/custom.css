@@ -19,9 +19,11 @@ a>p{
 
 /*Container*/
 .container{
-    max-width:960px;
+    width:960px;
+    max-width:94%;
     padding:10px;
     background-color: white;
+    
    
 }
 
