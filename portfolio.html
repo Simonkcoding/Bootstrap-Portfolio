@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -38,9 +39,9 @@
             <h1>Portfolio</h1>
             <hr>
             <div class="row">
-                <!--  -->
+                <!-- 1 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item portfolio-item1">
+                    <div class="card">
                         <div class="portfolio-pic">
                             <a href="https://simonkcoding.github.io/Word-Guess-Game/">
                                 <img src="assets/images/port_hangman.png" alt="crystal"></a>
@@ -51,9 +52,9 @@
                         </div>
                     </div>
                 </div>
-                <!--  -->
+                <!-- 2 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item portfolio-item2">
+                    <div class="card">
                         <div class="portfolio-pic">
                             <a href="https://simonkcoding.github.io/unit-4-game/">
                                 <img src="assets/images/port_crystal.png" alt="crystal"></a>
@@ -64,9 +65,9 @@
                         </div>
                     </div>
                 </div>
-                <!--  -->
+                <!-- 3 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item portfolio-item3">
+                    <div class="card">
                         <div class="portfolio-pic">
                             <a href="https://simonkcoding.github.io/TriviaGame/">
                                 <img src="assets/images/port_trivia.png" alt="crystal" width="280px"></a>
@@ -77,49 +78,48 @@
                         </div>
                     </div>
                 </div>
-                <!--  -->
-                <!--  -->
+                <!--4  -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item portfolio-item4">
+                    <div class="card">
                         <div class="portfolio-pic">
-                            <a href="#">
-                                <img src="assets/images/placeholder.png" alt="crystal" width="280px"></a>
+                            <a href="https://simonkcoding.github.io/Train-Scheduler/">
+                                <img src="assets/images/trainscheduler.png" alt="crystal" width="280px"></a>
                         </div>
                         <div class="portfolio-text">
-                            <p>Description</p>
-                            <p>Description</p>
+                            <p>Train Scheduler</p>
+                            <p>Firebase Realtime database <br>
+                            Push and snapshot value</p>
                         </div>
                     </div>
                 </div>
-                <!--  -->
-                <!--  -->
+                <!--5 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item portfolio-item5">
+                    <div class="card">
                         <div class="portfolio-pic">
-                            <a href="#">
-                                <img src="assets/images/placeholder.png" alt="crystal" width="280px"></a>
+                            <a href="https://simonkcoding.github.io/GifTastic/">
+                                <img src="assets/images/giphy.png" alt="crystal" width="280px"></a>
                         </div>
                         <div class="portfolio-text">
-                            <p>Description</p>
-                            <p>Description</p>
+                            <p>Giphy API JSON Object</p>
+                            <p>Stop and pause Gif <br>
+                            Get ratings,URLs Responsive</p>
                         </div>
                     </div>
                 </div>
-                <!--  -->
-                <!--  -->
+                <!--6 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item portfolio-item6">
+                    <div class="card">
                         <div class="portfolio-pic">
-                            <a href="#">
-                                <img src="assets/images/placeholder.png" alt="crystal" width="280px"></a>
+                            <a href="https://simonkcoding.github.io/travelgroupie/index.html">
+                                <img src="assets/images/travelgroupie.png" alt="crystal" width="280px"></a>
                         </div>
                         <div class="portfolio-text">
-                            <p>Description</p>
-                            <p>Description</p>
+                            <p>Team project Multiple APIs</p>
+                            <p>Firebase authenication <br> realtime database</p>                        </p>
                         </div>
                     </div>
                 </div>
-                <!--  -->
+
             </div>
     </section>
 
@@ -129,14 +129,11 @@
 
     <script>
 
-        setTimeout(function () {
-            $('.portfolio-item').animate({ opacity: 0.5 }, 1000);
-        })
 
-        $('.portfolio-item').hover(function () {
-            $(this).animate({ opacity: 1 }, 500);
+        $('.card').hover(function () {
+            $(this).css("box-shadow", " 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)")
         }, function () {
-            $(this).animate({ opacity: 0.5 }, 500);
+            $(this).css("box-shadow", "")
         });
 
 
